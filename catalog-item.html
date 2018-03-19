@@ -3,8 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Набор для путешествий «Baxter of California» | Магазин барбершопа «Бородинский»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" />
+	<link href="css/normalize.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
 		<nav class="main-navigation" aria-label="Навигация по сайту">
 			<a href="index.html" class="main-header-logo">
@@ -36,7 +39,7 @@
 		<div class="product-info">
 			<section class="product-gallery">
 				<h2 class="visually-hidden">Изображения товара</h2>
-				<p class="product-gallery-main">
+				<p class="product-gallery-full">
 					<a href="">
 						<img src="img/product-1-m.jpg" width="460" height="499" alt="Фото всего набора" />
 					</a>					
@@ -98,7 +101,7 @@
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
 		<p>Введите, пожалуйста, свой логин и пароль</p>
-		<form class="user" method="post" action="https://echo.htmlacademy.ru">
+		<form class="login-form" method="post" action="https://echo.htmlacademy.ru">
 			<p>
 				<label for="user-login" class="visually-hidden">Логин</label>
 				<input id="user-login" type="text" name="login" placeholder="Логин" />
