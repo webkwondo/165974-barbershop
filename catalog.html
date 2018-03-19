@@ -3,8 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Магазин барбершопа «Бородинский»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" />
+	<link href="css/normalize.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
 		<nav class="main-navigation" aria-label="Навигация по сайту">
 			<a href="index.html" class="main-header-logo">
@@ -54,7 +57,7 @@
 							<label for="filter-malin-goetz">Malin+Goetz</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" id="filter-murray-s" class="visually-hidden filter-input filter-input-checkbox" name="murray-s" />
+							<input type="checkbox" id="filter-murray-s" class="visually-hidden filter-input filter-input-checkbox" name="murray-s" disabled />
 							<label for="filter-murray-s">Murray's</label>
 						</li>
 						<li class="filter-option">
@@ -149,10 +152,10 @@
 				</li>
 			</ul>
 			<ul class="pagination">
-				<li><a href="#" class="page-number">1</a></li>
-				<li><a class="page-number current">2</a></li>
-				<li><a href="#" class="page-number">3</a></li>
-				<li><a href="#" class="page-number">4</a></li>
+				<li class="pagination-number"><a href="#">1</a></li>
+				<li class="pagination-number current"><a>2</a></li>
+				<li class="pagination-number"><a href="#">3</a></li>
+				<li class="pagination-number"><a href="#">4</a></li>
 			</ul>
 		</section>
 	</main>
@@ -176,7 +179,7 @@
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
 		<p>Введите, пожалуйста, свой логин и пароль</p>
-		<form class="user" method="post" action="https://echo.htmlacademy.ru">
+		<form class="login-form" method="post" action="https://echo.htmlacademy.ru">
 			<p>
 				<label for="user-login" class="visually-hidden">Логин</label>
 				<input id="user-login" type="text" name="login" placeholder="Логин" />
